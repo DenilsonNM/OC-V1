@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorear Ropa</title>
+  <style>
+    svg {
+      width: 150px;
+      cursor: pointer;
+    }
+    .color-picker {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- SVG de Camisa -->
+<svg id="camisa" viewBox="0 0 100 100">
+  <rect id="camisa-color" x="10" y="10" width="80" height="30" fill="#cccccc" />
+</svg>
+<input type="color" id="colorCamisa" class="color-picker" />
+
+<!-- SVG de Pantalón -->
+<svg id="pantalon" viewBox="0 0 100 100">
+  <rect id="pantalon-color" x="10" y="50" width="80" height="30" fill="#999999" />
+</svg>
+<input type="color" id="colorPantalon" class="color-picker" />
+
+<script>
+  // Referencias
+  const camisa = document.getElementById('camisa');
+  const pantalon = document.getElementById('pantalon');
+  const colorCamisa = document.getElementById('colorCamisa');
+  const colorPantalon = document.getElementById('colorPantalon');
+  const camisaColor = document.getElementById('camisa-color');
+  const pantalonColor = document.getElementById('pantalon-color');
+
+  // Al hacer click en la camisa
+  camisa.addEventListener('click', () => {
+    colorCamisa.click();
+  });
+
+  colorCamisa.addEventListener('input', (e) => {
+    camisaColor.setAttribute('fill', e.target.value);
+  });
+
+  // Al hacer click en el pantalón
+  pantalon.addEventListener('click', () => {
+    colorPantalon.click();
+  });
+
+  colorPantalon.addEventListener('input', (e) => {
+    pantalonColor.setAttribute('fill', e.target.value);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="lib/carrousel/carrousel.css">
+  <script src="https://kit.fontawesome.com/892bb677d3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+  <header class="ancho">
+    <h1>OUTFITS COLORS</h1>
+
+    <div class="div_header_menu">
+
+      <a id="theme_switch">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i> Theme</a>
+
+      <a href="html/es/index.html" class="lang_switch" data-lang="en">
+        <i class="fa-solid fa-language"></i> <span>Es</span></a>
+    </div>
+  </header>
+
+  <!-- ------------------------------------- -->
+
+  <nav class="nav_main_menu">
+    <ul class="ancho ">
+      <li><a href="#">Hide menu</a></li>
+      <li><a href="#">Background color</a></li>
+    </ul>
+  </nav>
+
+  <!-- ------------------------------------- -->
+
+  <section>
+    <div>
+
+    </div>
+  </section>
+
+  <section id="carousel">
+    <div class="div-carousel" id="slide-container">
+      <article class="arti-carousel slide" data-slideIndex="0">
+        <i class="fa-solid fa-hat-wizard"></i>
+      </article>
+      <article class="arti-carousel slide" data-slideIndex="1">
+        <i class="fa-solid fa-hat-cowboy"></i>
+      </article>
+      <article class="arti-carousel slide" data-slideIndex="2">
+        <i class="fa-solid fa-helmet-safety"></i>
+      </article>
+      <article class="arti-carousel slide" data-slideIndex="3">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </article>
+    </div>
+
+    <div class="div-flechas slide-buttons">
+      <a href="#" id="back-button" class="arrow back"><i class="fa-solid fa-angle-left"></i></a>
+      <a href="#" id="forward-button" class="arrow forward"><i class="fa-solid fa-angle-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ------------------------------------- -->
+
+  <script src="lib/carrousel/carrousel.js"></script>
+
+</body>
+
+</html>
