@@ -1,11 +1,11 @@
-#carousel {
+.carousel {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   position: relative;
 }
 
-#slide-container {
+.slide-container {
   scroll-snap-type: x mandatory;
   overflow-x: hidden;
   overflow-y: hidden;
