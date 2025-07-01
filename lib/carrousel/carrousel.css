@@ -1,28 +1,23 @@
 .carousel {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
   position: relative;
 }
 
 .slide-container {
-  scroll-snap-type: x mandatory;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
   gap: 10px;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
 }
 
 .slide {
   padding: 20px;
   scroll-snap-align: center;
-  position: relative;
+  /* position: relative; */
   min-width: 100%;
   text-align: center;
+  font-size: xx-large;
 }
 
 .slide-buttons {
